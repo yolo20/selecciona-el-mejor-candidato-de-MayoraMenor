@@ -1,0 +1,7 @@
+C:\Users\Puerco araña\source\repos\RetoLenguaje\RetoLenguaje\obj\Debug\RetoLenguaje.csprojAssemblyReference.cache
+C:\Users\Puerco araña\source\repos\RetoLenguaje\RetoLenguaje\obj\Debug\RetoLenguaje.csproj.CoreCompileInputs.cache
+C:\Users\Puerco araña\source\repos\RetoLenguaje\RetoLenguaje\bin\Debug\RetoLenguaje.exe.config
+C:\Users\Puerco araña\source\repos\RetoLenguaje\RetoLenguaje\bin\Debug\RetoLenguaje.exe
+C:\Users\Puerco araña\source\repos\RetoLenguaje\RetoLenguaje\bin\Debug\RetoLenguaje.pdb
+C:\Users\Puerco araña\source\repos\RetoLenguaje\RetoLenguaje\obj\Debug\RetoLenguaje.exe
+C:\Users\Puerco araña\source\repos\RetoLenguaje\RetoLenguaje\obj\Debug\RetoLenguaje.pdb
