@@ -68,10 +68,15 @@ namespace ConsoleApp1
                 double Suma = 0;
                 for (int index = 1; index <= 7; index++)
                 {
-                    Console.WriteLine($"\nIngrese el valor porcentual del criterio {index} ");
-                    double Porcentajes = double.Parse(Console.ReadLine());
+                    double Porcentajes = 0;
+                    do
+                    {
+                        Console.WriteLine($"\nIngrese el valor porcentual del criterio {index} ");
+                        Porcentajes = double.Parse(Console.ReadLine());
+                    }
+                    while (Porcentajes < 0);
                     //Si la suma de los porcentajes es menor o mayor a 100 cambia el valor de cada key
-                    if (valorporcentual.ContainsKey(index))
+                    if (valorporcentual.ContainsKey(index) )
                     {
                         valorporcentual[index] = Porcentajes;
                     }
@@ -98,15 +103,24 @@ namespace ConsoleApp1
             int Ncandidato = Int32.Parse(Console.ReadLine());
             for (int index = 1; index <= Ncandidato; index++)
             {
-                //Adquiere el indicador de cada candidato
-                Console.WriteLine($"\nPor favor ingrese el numero de cedula del candidato: {index}");
-                int Ncedula = Int32.Parse(Console.ReadLine());
+                int Ncedula = 0;
+                do
+                {
+                    //Adquiere el indicador de cada candidato
+                    Console.WriteLine($"\nPor favor ingrese el numero de cedula del candidato: {index}");
+                    Ncedula = Int32.Parse(Console.ReadLine());
+                }
+                while (Ncedula < 0);
                 double SumaNotas = 0;
                 //Adquiere la nota y realiza el calculo para hallar la nota total  apartir de las notas de los 7 criterios de evaluación (siendo 1 minima y 10 maxima)
                 for (int indexs = 1; indexs <= 7; indexs++)
                 {
-                    Console.WriteLine($"\nIngrese la nota {indexs} ");
-                    int Calificacion = Int32.Parse(Console.ReadLine());
+                    int Calificacion = 0;
+                    do {
+                        Console.WriteLine($"\nIngrese la nota {indexs} ");
+                        Calificacion = Int32.Parse(Console.ReadLine());
+                    }
+                    while (Calificacion<0);
                     if (Calificacion <= 10)
                     {
                         double CalculoNotas = ((70 * valorporcentual[indexs] / 100) * Calificacion) / 10;
